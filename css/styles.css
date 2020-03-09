@@ -4,7 +4,7 @@ a {
   text-decoration: none;
 }
 a:hover{
-  color: #EAF6F6;
+  color: #faedf1;
 }
 
 body {
@@ -38,7 +38,7 @@ hr {
   border-width: 5px;
   border-style: dotted none none;
   width: 4%;
-  color: #EAF6F6;
+  color: #c295d8;
   margin: 100px auto;
 }
 p{
@@ -89,20 +89,20 @@ p{
 
 .bottom-container {
   background-color: #f1c6d3;
-  color: #EAF6F6;
+  color: #faedf1;
   padding: 50px;
 }
 
 .top-cloud {
   position: absolute;
-  right: 150px;
+  right: 10%;
   top: 50px;
   width: 300px;
 }
 
 .bottom-cloud {
   position: absolute;
-  left: 150px;
+  left: 10%;
   bottom: 300px;
   width: 300px;
 }
