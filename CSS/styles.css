@@ -1,0 +1,131 @@
+body{
+text-align: center;
+font-family: 'Lora', serif;
+
+}
+h1{
+  font-family: 'Poiret One', cursive;
+
+}
+h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+p{
+  font-family: 'Lora', serif;
+}
+
+
+.img-carousel{
+
+        max-height: 600px;
+        overflow: hidden;
+        background-color: black;
+
+
+}
+.img-carousel img {
+
+        max-height: 750px;
+        margin: -75px 0 0 0;
+        opacity: 0.3;
+
+
+    }
+
+
+.navbar-edit{
+  background-color: #b2ebf2;
+}
+
+
+.navbar-link{
+  color: darkgrey;
+  margin: auto 1rem;
+
+}
+
+.menu-nav{
+  border: 0;
+}
+
+.section-heading{
+  margin-bottom: 5%;
+}
+
+.colored-section{
+background-color: #00bcd4;
+color: #fff;
+padding: 7% 9% 3%;
+}
+
+.white-section{
+background-color: #fff;
+padding: 7% 9% 3%;
+}
+
+.white-section p{
+  margin:0;
+}
+
+.white-section h2,h3{
+  color: #ff5722;
+  margin: 0;
+}
+
+
+
+.grey{
+  background-color: #f1f3f4;
+}
+
+.white-section a{
+  color: #00bcd4;
+}
+
+
+.dark-section{
+background-color: #50555e;
+color: #818996;
+padding: 7% 9% 3%;
+}
+.dark-section a{
+color: #818996;
+}
+.dark-section h4{
+  color: #ff5722;
+  padding-bottom: 4%;
+}
+
+.dark-section .btn{
+  float: right;
+}
+
+/* About section */
+.about-img{
+  width:294px;
+}
+
+.col-text{
+  margin-top: 3%;
+  text-align: left;
+}
+
+.about-btn{
+  width: 200px;
+  margin-top: 2%;
+}
+
+.column-skills{
+  margin: 3% auto;
+}
+
+.column-skills h4{
+  margin: 3% auto;
+}
+
+.icon-footer{
+  color:#fff;
+  margin: auto 1.5%;
+}
