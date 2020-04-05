@@ -3,59 +3,347 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Andalus's new site</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>My personal resume</title>
+  <!-- icon -->
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Inria+Serif|Lato|Rouge+Script&display=swap" rel="stylesheet">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,500,700|Poiret+One|Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/percentage.css">
+
+  <link rel="stylesheet" href="CSS/styles.css">
+
 
 </head>
 
 <body>
-  <div role="region" tabindex="999" aria-label="Steps"><div data-iridize-role="title" class="popover-title"><button aria-label="Close" data-iridize-role="closeBt">&#10005;</button></div><div class="popover-content"><div data-iridize-id="content"></div></div><div class="stFooter" data-iridize-id="footer"><div><span class="steps-count">Step <span data-iridize-role="stepCount"></span>/<span data-iridize-role="stepsCount"></span></span><button tabindex="999" class="prev-btn default-later-btn" data-iridize-role="laterBt">Remind me later</button><span class="powered-by">Powered by </span></div><div data-iridize-role="nextBtPane"><button tabindex="999" class="prev-btn default-prev-btn" data-iridize-role="prevBt">Back</button><a tabindex="999" role="button" aria-label="Next" class="next-btn" data-iridize-role="nextBt" href="javascript:void(0);">Next</a></div></div></div>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud" />
-    <h1>I'm Andalus</h1>
-    <h2>a <u>pro</u>gramer.</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud" />
-    <img src="images/tree.png" alt="tree" />
+
+
+  <div id="home" class="carousel slide" data-ride="carousel">
+    <!-- carousel -->
+    <ol class="carousel-indicators">
+      <li data-target="#home" data-slide-to="0" class="active"></li>
+      <li data-target="#home" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active img-carousel">
+        <img src="images/software-engineer.jpg" class="d-block w-100" alt="Software engineer programming">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Andalus Mahameed</h1>
+          <p>Software engineer graduate.</p>
+        </div>
+      </div>
+      <div class="carousel-item img-carousel">
+        <img src="images/Web-Developer.jpeg" class="d-block w-100" alt="Web development">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Andalus Mahameed</h1>
+          <p>Web developer.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <h3 class="navbar-toggler menu-nav">Menu</h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="about" class="colored-section">
+    <div class="about-title">
+      <h2>About me</h2>
+      <p>Little introduction on me</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-text">
+        <h3>Andalus Mahameed</h3>
+        <h5>Software Engineer Graduate</h5>
+        <p>
+          I am a quick learner with a huge set of skills and the will to always improve and to advance my abilities.
+          My motivation, people-centric nature, and eagerness to learn have afforded me excellent problem-solving skills.
+      I am excited to contribute my strengths and proficiency in teamwork toward your team efforts.
+       As an extroverted and personable communicator with a proven track record in performance improvement, my focus on building strong professional relationships has been a valuable asset throughout my career.
+
+        </p>
+        <a href="https://www.dropbox.com/s/4pvcncw22p18tts/resume.pdf" download="Andalus-resume.pdf" target=_blank>
+          <button type="button" class="btn btn-dark about-btn">Download resume</button></a>
+      </div>
+      <div class="col-lg-4"><img class="about-img" src="images/profile.png" alt="My profile picture"></div>
+    </div>
+
   </div>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="images/profile.png" alt="Profile picture">
-      <h2>Welcome!</h2>
-      <p class="intro">I am a software engineer graduate and on my way to become fullstack developer.</p>
+
+  <div class="white-section grey" id="skills">
+    <div class="section-heading">
+      <h2>Technical skills</h2>
+      <p>Things I know</p>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="design-img" src="images/monitor.png" alt="Development">
-        <h3>Design and Development</h3>
-        <p>I started learning programing in 7th grade, cause I wanted to make video games and websites for my intrests and I enjoyed it a lot.</p>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p90 blue">
+          <span>90%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>Java</h4>
+
       </div>
-      <div class="skill-row">
-        <img class="baking-img" src="images/baking.png" alt="baking">
-        <h3>Baking</h3>
-        <p>One of my best skills is baking, I love making gluten free deserts, I like baking new things every once in a while.</p>
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p85 blue">
+          <span>85%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>C#</h4>
+
+      </div>
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p70 blue">
+          <span>70%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>Python</h4>
+
+      </div>
+
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p83 blue">
+          <span>83%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>HTML/CSS</h4>
+
       </div>
     </div>
-    <hr>
-    <div >
-      <h2>Get In Touch</h2>
-      <h3>Dessert lover?</h3>
-      <p class="contact-me">If you love deserts as much as I do? Let's talk about how awesome they are! We can code while we eat deserts!</p>
-      <a class="btn" href="mailto:andalos2007@hotmail.com">CONTACT ME</a>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p75 blue">
+          <span>75%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>JavaScript</h4>
+
+      </div>
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p68 blue">
+          <span>68%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>C</h4>
+
+      </div>
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p70 blue">
+          <span>70%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>C++</h4>
+
+      </div>
+      <div class="col-lg-3 col-md-6 column-skills">
+
+        <div class="c100 p87 blue">
+          <span>87%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+
+        </div>
+        <h4>Linux</h4>
+
+      </div>
     </div>
-  </div>
+
   </div>
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/andalus-mhameed-81749511a/">LinkedIn</a>
-    <a class="footer-link" href="https://www.facebook.com/andalus.mahameed">Facebook</a>
-    <!-- <a class="footer-link" href="https://www.appbrewery.co/">Website</a> -->
-    <p class="copyright">© 2020 Andalus Mhameed.</p>
+  <div class="white-section" id="experience">
+    <div class="section-heading">
+      <h2>Work experience</h2>
+      <p>my previous jobs</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4  col-text ">
+        <h3>Jul/2019 - Now</h3>
+      </div>
+      <div class="col-lg-8  col-text">
+        <h3><a href="https://she-codes.org/">She Codes;</a></h3>
+        <h5>Data analysis mentor</h5>
+        <ul>
+          <li>Helping to write an algorithm course for high school students.</li>
+          <li>Aiding track participants.</li>
+          <li>Managing a group of participants.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4  col-text ">
+        <h3>Aug/2017 - Jun/2019</h3>
+      </div>
+      <div class="col-lg-8  col-text">
+        <h3><a href="https://www.checkpoint.com/">CheckPoint</a></h3>
+        <h5>Security analyst</h5>
+        <ul>
+          <li>I worked on projects and researching security problems and risks.</li>
+          <li>I also worked on a project that used machine learning to determine if the company's protections were giving false info or not, using (Python, Flask,Javascript,HTML,CSS).</li>
+          <li>I was also in charge of rewriting the training material.</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <div class="white-section grey" id="education">
+    <div class="section-heading">
+      <h2>Educations & Diploma</h2>
+      <p>my previous jobs</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4  col-text ">
+        <h3>Mar/2020 - Now</h3>
+      </div>
+      <div class="col-lg-8  col-text">
+        <h3><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Udemy</a></h3>
+        <h5>Full stack</h5>
+        <ul>
+          <li>I have done several projects like this site</li>
+          <li>I have done projects in JQuery,Express,CSS,HTML and Rest.</li>
+          <li>I have learned to use Mango, Mangoose and done a project using it.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4  col-text ">
+        <h3>Oct/2015 - Sep/2019</h3>
+      </div>
+      <div class="col-lg-8  col-text">
+        <h3><a href="https://in.bgu.ac.il/en/Pages/default.aspx">Ben-Gurion University of the Negev</a></h3>
+        <h5>S.Cs. Software Engineer</h5>
+        <ul>
+          <li>I have done an AWS project Project that used Hadoop and different AWS services to run a complicated and long process easier and faster, one was about predicting the next word via google books (using Hadoop,Java).</li>
+          <li>I have done a machine learing project that takes many data and uses different machine learning models to determine the correct parsing for a certain sensor schema to a general one (using Python,Java,Django,AWS and Tenserflow).</li>
+          <li>I have done a project with 5 students, where we had to build a website via a requirements list giving to us via the client with the freedom of the language, and there was testing and proper documentations to the whole project and
+            timeline to achieve the new requirements (using Python,Django,HTML,JS,SQL).
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="dark-section" id="contact">
+    <div class="row">
+
+
+      <div class="col-lg-4 col-text">
+        <h4>Contact Details</h4>
+        <p> <i class="fa fa-mobile fa-lg"></i> 0532792006</p>
+        <p> <i class="fa fa-envelope-o "></i> <a href="mailto:andalos2007@hotmail.com"> andalos2007@hotmail.com</a></p>
+      </div>
+
+      <div class="col-lg-8 col-text">
+        <h4>Shoot me a message!</h4>
+
+<form action="mailto:andalos2007@hotmail.com" method="post" enctype="text/plain">
+  <div class="form-group">
+  <input class="form-control" type="text" name="name"  placeholder="Your Full Name...">
+</div>
+
+<div class="form-group">
+
+  <input class="form-control" type="email" name="mail" placeholder="Your Email...">
+</div>
+<div class="form-group">
+
+  <textarea placeholder="Your Message..." class="form-control" id="content" name="comment" rows="8" cols="80"></textarea>
+</div>
+
+<button class="btn btn-danger" type="submit">Send message</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="colored-section">
+      <div class="section-heading">
+        <a href="https://www.facebook.com/andalus.mahameed" title="facebook" target="_blank"><i class="fa fa-facebook fa-m icon-footer"></i></a>
+        <a href="https://www.linkedin.com/in/andalus-mhameed-81749511a/" title="linkedin" target="_blank"><i class="fa fa-linkedin fa-m icon-footer"></i></a>
+        <a href="https://github.com/andalusm" title="github" target="_blank"><i class="fa fa-github fa-m icon-footer"></i></a>
+      </div>
+
+      <p>© Copyright 2020 Andalus</p>
+    </div>
+  </footer>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/80f5cec321.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
